@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Sistem Informasi Parkir | STT-NF</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="dist/img/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="dist/img/logo.png" alt="" />
+          <span>SIPAK STT-NF</span>
+        </a>
+        <!-- navbar -->
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="index.html#berita">Berita</a></li>
+            <li><a class="nav-link" href="">Fasilitas Parkir</a></li>
+            <li><a class="getstarted" href="login.html">Login</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- end navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section style="padding-left: 20%; padding-right: 20%; padding-top: 8%">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+
+      <div class="card">
+        <h4 style="margin-top: 2%" class="font-weight-bold text-center">Registrasi Kendaraan Anda</h4>
+        <div class="card-body">
+          <form action="" method="POST" onsubmit="alert('Berhasil, kendaraan anda telah diregistrasikan')">
+            <div class="form-group row">
+              <label class="col-3">Status</label>
+              <div class="col-9">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="status" id="status_0" type="radio" class="custom-control-input" value="mahasiswa" required />
+                  <label for="status_0" class="custom-control-label">Mahasiswa</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="status" id="status_1" type="radio" class="custom-control-input" value="dosen" required />
+                  <label for="status_1" class="custom-control-label">Dosen</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="text" class="col-3 col-form-label">NIM / NIDN</label>
+              <div class="col-9">
+                <input id="text" name="text" type="text" class="form-control" placeholder="Masukkan NIM / NIDN Anda" required />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="nama" class="col-3 col-form-label">Nama Lengkap</label>
+              <div class="col-9">
+                <input id="nama" name="nama" type="text" class="form-control" placeholder="Masukkan Nama Lengkap Anda" required />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="prodi" class="col-3 col-form-label">Prodi</label>
+              <div class="col-9">
+                <select id="prodi" name="prodi" required class="custom-select">
+                  <option value="" selected disabled hidden>-- Pilih Prodi --</option>
+                  <option value="ti">Teknik Informatika</option>
+                  <option value="si">Sistem Informasi</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-3">Jenis Kendaraan</label>
+              <div class="col-9">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="kendaraan" id="kendaraan_0" type="radio" class="custom-control-input" value="mobil" required />
+                  <label for="kendaraan_0" class="custom-control-label">Mobil</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input name="kendaraan" id="kendaraan_1" type="radio" class="custom-control-input" value="motor" required />
+                  <label for="kendaraan_1" class="custom-control-label">Motor</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="nopol" class="col-3 col-form-label">Nomor Polisi</label>
+              <div class="col-9">
+                <input id="nopol" name="nopol" type="text" class="form-control" required placeholder="Masukkan Nomor Polisi" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="merk" class="col-3 col-form-label">Merk</label>
+              <div class="col-9">
+                <input id="merk" name="merk" type="text" class="form-control" required placeholder="Masukkan Merk" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="file" class="col-3 col-form-label">Upload STNK</label>
+              <div class="col-7">
+                <input id="file" name="file" type="file" class="form-control" required />
+              </div>
+              <div class="col-1">
+                <button type="submit" class="btn btn-primary btn-lg">Daftar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer fixed-bottom">
+      <!-- ======= Footer ======= -->
+      <footer>
+        <div class="container">
+          <div class="credits">Develop by <a href="https://nurulfikri.ac.id/" target="_blank">WebTubruk</a> TI-17</div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </section>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
