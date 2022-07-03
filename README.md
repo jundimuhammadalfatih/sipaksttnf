@@ -1,6 +1,6 @@
 # sipaksttnf
 
-Projek Sistem Informasi Parkir STT-NF untuk tugas akhir mata kuliah Pemrograman Web Semester 1
+Projek Sistem Informasi Parkir STT-NF untuk tugas akhir mata kuliah Pemrograman Web 1
 
 ## login
 
